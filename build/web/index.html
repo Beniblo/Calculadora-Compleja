@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calculadora Compleja</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de numeros complejos" />
+    <meta name="author" content="Beniblo" />
+
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap-utilities.css" />
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="text-center mb-0">
+                            Calculadora de Números Complejos
+                        </h3>
+                    </div>
+                    <div class="card-body">
+
+                        <h5 class="text-secondary mt-2">Número 1</h5>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="txtReal1" class="form-control" placeholder="Real" />
+                                    <label for="txtReal1">Parte Real</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="txtImg1" class="form-control" placeholder="Imaginaria" />
+                                    <label for="txtImg1">Parte Imaginaria</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="text-secondary mt-4">Número 2</h5>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="txtReal2" class="form-control" placeholder="Real" />
+                                    <label for="txtReal2">Parte Real</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating">
+                                    <input id="txtImg2" class="form-control" placeholder="Imaginaria" />
+                                    <label for="txtImg2">Parte Imaginaria</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4 text-center">
+                            <div class="col-12">
+                                <div class="btn-group" role="group">
+                                    <button class="btn btn-outline-primary btn-lg" onclick="realizarOperacion(1);">+</button>
+                                    <button class="btn btn-outline-primary btn-lg" onclick="realizarOperacion(2);">-</button>
+                                    <button class="btn btn-outline-primary btn-lg" onclick="realizarOperacion(3);">*</button>
+                                    <button class="btn btn-outline-primary btn-lg" onclick="realizarOperacion(4);">/</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <label class="form-label fw-bold">Resultado:</label>
+                                <input id="txtResultado" type="text" class="form-control text-center fw-bold" readonly placeholder="0 + 0i" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="style/bootstrap/js/bootstrap.js"></script>
+    <script src="style/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script src="js/operaciones_complejas.js"></script>
+</body>
+</html>
